@@ -1,6 +1,6 @@
 class Bear
 
-attr_reader :name
+  attr_reader :name
 
   def initialize(name)
     @name = name
@@ -15,4 +15,10 @@ attr_reader :name
     @stomach << food
   end
 
+  def eat_fish_from_river(river)
+    for fish in river.fish()
+      eat(fish)
+    end
+    river.remove_fish()
+  end
 end
