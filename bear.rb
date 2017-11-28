@@ -19,6 +19,6 @@ class Bear
     for fish in river.fish()
       eat(fish)
     end
-    river.remove_fish()
+    river.remove_fish(fish)
   end
 end
